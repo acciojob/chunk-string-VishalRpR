@@ -4,7 +4,7 @@ function stringChop(str, size) {
 	let j=size;
 	let arr=[]
 	while(j<=str.length){
-      let newstr=str.substring(i,size)
+      let newstr=str.substring(i,j)
 		arr.push(newstr)
 
 		i=j;
@@ -13,7 +13,7 @@ function stringChop(str, size) {
 	}
 
 	if(i<str.length){
-  arr.push(str.substring(i,arr.length))
+  arr.push(str.substring(i,str.length))
 	
 	}
 
