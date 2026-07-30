@@ -3,7 +3,7 @@ function stringChop(str, size) {
 	size=Number(size)
 	str=String(str)
 
-	if(str.length=0){
+	if(str.length=0 || str===null){
 		return []
 	}
 	let i=0;
