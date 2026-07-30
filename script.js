@@ -1,5 +1,8 @@
 function stringChop(str, size) {
   // your code here
+	size=Number(size)
+	str=String(str)
+	
 	let i=0;
 	let j=size;
 	let arr=[]
@@ -8,7 +11,7 @@ function stringChop(str, size) {
 		arr.push(newstr)
 
 		i=j;
-		j=j+size;
+		j+=size;
 		
 	}
 
